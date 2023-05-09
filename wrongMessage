@@ -1,1 +1,280 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : DSP
+Version: R-2020.09-SP5-3
+Date   : Mon May  8 22:35:41 2023
+****************************************
 
+Operating Conditions: NCCOM   Library: tcb018gbwp7ttc_ccs
+Wire Load Model Mode: enclosed
+
+  Startpoint: Tile_X0Y1_DSP_bot/Inst_MULADD/ACC_reg[16]
+              (rising edge-triggered flip-flop clocked by UserCLK)
+  Endpoint: Tile_X0Y0_N4BEG[13]
+            (output port clocked by UserCLK)
+  Path Group: UserCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DSP                ZeroWireload          tcb018gbwp7ttc_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UserCLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.20       0.20
+  Tile_X0Y1_DSP_bot/Inst_MULADD/ACC_reg[16]/CP (DFKCNQD1BWP7T)
+                                                          0.00       0.20 r
+  Tile_X0Y1_DSP_bot/Inst_MULADD/ACC_reg[16]/Q (DFKCNQD1BWP7T)
+                                                          0.24       0.44 f
+  U1744/ZN (IOA21D2BWP7T)                                 0.11       0.55 f
+  U1743/ZN (AOI21D2BWP7T)                                 0.15       0.70 r
+  U188/ZN (MAOI222D1BWP7T)                                0.14       0.85 f
+  U186/ZN (MAOI222D1BWP7T)                                0.22       1.07 r
+  U4464/ZN (XNR2D2BWP7T)                                  0.22       1.29 f
+  U1753/ZN (IOA21D2BWP7T)                                 0.23       1.52 f
+  Tile_X0Y0_DSP_top/Inst_DSP_top_switch_matrix/inst_cus_mux161_buf_JS2BEG7/cus_mux41_buf_inst2/U1/Z (AO221D1BWP7T)
+                                                          0.29       1.80 f
+  U1759/ZN (INVD1BWP7T)                                   0.07       1.87 r
+  U4484/ZN (OAI21D2BWP7T)                                 0.09       1.96 f
+  U4488/ZN (IND2D2BWP7T)                                  0.07       2.03 r
+  U4489/ZN (IND2D2BWP7T)                                  0.06       2.09 f
+  U4523/ZN (OAI21D2BWP7T)                                 0.09       2.19 r
+  U4525/ZN (OAI21D2BWP7T)                                 0.06       2.25 f
+  U4527/ZN (IND3D2BWP7T)                                  0.09       2.34 r
+  U4442/Z (BUFFD12BWP7T)                                  0.12       2.47 r
+  U4432/ZN (INVD12BWP7T)                                  0.03       2.50 f
+  Tile_X0Y1_DSP_bot/Inst_DSP_bot_switch_matrix/inst_cus_mux161_buf_JE2BEG5/cus_mux41_buf_inst3/U2/ZN (MOAI22D1BWP7T)
+                                                          0.12       2.62 f
+  Tile_X0Y1_DSP_bot/Inst_DSP_bot_switch_matrix/inst_cus_mux161_buf_JE2BEG5/cus_mux41_buf_inst3/U1/Z (AO221D1BWP7T)
+                                                          0.33       2.94 f
+  U5034/ZN (OAI21D2BWP7T)                                 0.09       3.03 r
+  U5035/ZN (AOI21D2BWP7T)                                 0.05       3.08 f
+  Tile_X0Y1_DSP_bot/Inst_DSP_bot_switch_matrix/inst_cus_mux41_buf_J2MID_EFa_BEG1/U2/ZN (MOAI22D1BWP7T)
+                                                          0.14       3.22 f
+  U4491/ZN (NR2XD1BWP7T)                                  0.07       3.29 r
+  U4498/ZN (OAI21D2BWP7T)                                 0.08       3.37 f
+  U4422/ZN (XNR2D2BWP7T)                                  0.18       3.55 f
+  U4518/ZN (NR2XD1BWP7T)                                  0.06       3.61 r
+  U4521/ZN (IND3D2BWP7T)                                  0.22       3.83 r
+  U4408/ZN (INVD6BWP7T)                                   0.05       3.88 f
+  U4407/ZN (CKND12BWP7T)                                  0.05       3.94 r
+  U5021/ZN (OAI22D2BWP7T)                                 0.05       3.98 f
+  Tile_X0Y1_DSP_bot/Inst_DSP_bot_switch_matrix/inst_cus_mux161_buf_JE2BEG3/cus_mux41_buf_inst3/U1/Z (AO221D1BWP7T)
+                                                          0.34       4.33 f
+  U1713/ZN (OAI21D2BWP7T)                                 0.09       4.42 r
+  U5049/ZN (NR2XD1BWP7T)                                  0.04       4.46 f
+  Tile_X0Y1_DSP_bot/Inst_DSP_bot_switch_matrix/inst_cus_mux41_buf_J2MID_ABa_BEG1/U1/Z (AO221D1BWP7T)
+                                                          0.34       4.80 f
+  U1719/ZN (INR2D2BWP7T)                                  0.08       4.88 r
+  U1718/ZN (INR2D2BWP7T)                                  0.06       4.94 f
+  U4549/ZN (IND4D2BWP7T)                                  0.09       5.03 r
+  U4550/ZN (OAI211D2BWP7T)                                0.08       5.11 f
+  U4561/Z (XOR2D2BWP7T)                                   0.17       5.28 f
+  U1075/ZN (XNR3D2BWP7T)                                  0.33       5.61 f
+  U4528/ZN (IOA21D2BWP7T)                                 0.13       5.74 f
+  U4426/Z (BUFFD10BWP7T)                                  0.12       5.86 f
+  U4423/ZN (CKND10BWP7T)                                  0.06       5.92 r
+  U5027/ZN (OAI22D2BWP7T)                                 0.05       5.96 f
+  Tile_X0Y1_DSP_bot/Inst_DSP_bot_switch_matrix/inst_cus_mux161_buf_JW2BEG1/cus_mux41_buf_inst3/U1/Z (AO221D1BWP7T)
+                                                          0.35       6.31 f
+  U4585/ZN (IND4D2BWP7T)                                  0.07       6.38 r
+  U4586/ZN (OAI211D2BWP7T)                                0.09       6.47 f
+  U4587/ZN (AOI21D2BWP7T)                                 0.16       6.63 r
+  U1765/Z (BUFFD5BWP7T)                                   0.12       6.75 r
+  U4588/ZN (NR2XD1BWP7T)                                  0.11       6.86 f
+  U4589/ZN (CKND2D2BWP7T)                                 0.09       6.95 r
+  U4861/ZN (CKND2BWP7T)                                   0.08       7.02 f
+  U947/Z (XOR3D2BWP7T)                                    0.32       7.34 r
+  U4867/Z (AN2XD1BWP7T)                                   0.11       7.46 r
+  U4868/ZN (OAI22D2BWP7T)                                 0.07       7.53 f
+  U719/ZN (MAOI222D1BWP7T)                                0.22       7.74 r
+  U4410/ZN (INVD0BWP7T)                                   0.05       7.79 f
+  U4411/ZN (CKND1BWP7T)                                   0.08       7.88 r
+  U4675/ZN (CKND2BWP7T)                                   0.04       7.92 f
+  U4676/ZN (NR2XD1BWP7T)                                  0.08       8.00 r
+  U4677/ZN (AOI21D2BWP7T)                                 0.06       8.06 f
+  U4696/ZN (MAOI222D1BWP7T)                               0.22       8.27 r
+  U4709/Z (XOR2D2BWP7T)                                   0.24       8.51 f
+  U502/ZN (MAOI222D1BWP7T)                                0.28       8.79 r
+  U1711/ZN (OAI21D2BWP7T)                                 0.06       8.85 f
+  U1710/ZN (IND2D4BWP7T)                                  0.17       9.02 f
+  Tile_X0Y1_DSP_bot/Inst_DSP_bot_switch_matrix/inst_cus_mux161_buf_JN2BEG1/cus_mux41_buf_inst2/U1/Z (AO221D1BWP7T)
+                                                          0.24       9.26 f
+  U4723/ZN (AOI21D2BWP7T)                                 0.10       9.36 r
+  U1764/Z (BUFFD5BWP7T)                                   0.12       9.48 r
+  U4724/ZN (NR2XD1BWP7T)                                  0.11       9.59 f
+  U4731/Z (XOR2D2BWP7T)                                   0.21       9.80 f
+  U4771/Z (XOR2D2BWP7T)                                   0.17       9.97 f
+  U551/ZN (MAOI222D1BWP7T)                                0.28      10.25 r
+  U4769/ZN (XNR2D2BWP7T)                                  0.26      10.51 f
+  U4770/ZN (XNR2D2BWP7T)                                  0.20      10.71 r
+  U480/ZN (MAOI222D1BWP7T)                                0.09      10.80 f
+  U479/ZN (MAOI222D1BWP7T)                                0.24      11.04 r
+  U477/ZN (MAOI222D1BWP7T)                                0.14      11.18 f
+  U476/ZN (MAOI222D1BWP7T)                                0.27      11.45 r
+  U474/ZN (MAOI222D1BWP7T)                                0.14      11.60 f
+  U197/ZN (MAOI222D1BWP7T)                                0.20      11.80 r
+  U4399/ZN (INVD1BWP7T)                                   0.05      11.85 f
+  U4400/ZN (CKND2BWP7T)                                   0.06      11.90 r
+  U1706/ZN (XNR2D2BWP7T)                                  0.16      12.06 f
+  U1705/ZN (CKND2D2BWP7T)                                 0.08      12.14 r
+  U1704/ZN (ND2D5BWP7T)                                   0.13      12.27 f
+  Tile_X0Y0_DSP_top/Inst_DSP_top_switch_matrix/inst_cus_mux161_buf_JW2BEG5/cus_mux41_buf_inst1/U2/ZN (MOAI22D1BWP7T)
+                                                          0.15      12.42 f
+  Tile_X0Y0_DSP_top/Inst_DSP_top_switch_matrix/inst_cus_mux161_buf_JW2BEG5/cus_mux41_buf_inst1/U1/Z (AO221D1BWP7T)
+                                                          0.34      12.75 f
+  U4759/ZN (IND2D2BWP7T)                                  0.06      12.82 r
+  U4766/ZN (OAI21D2BWP7T)                                 0.05      12.87 f
+  U4767/ZN (XNR2D2BWP7T)                                  0.17      13.04 f
+  U4768/ZN (IND2D2BWP7T)                                  0.08      13.12 r
+  U1741/ZN (ND2D5BWP7T)                                   0.12      13.24 f
+  U1318/Z (AO221D1BWP7T)                                  0.24      13.48 f
+  U5048/ZN (NR4D1BWP7T)                                   0.08      13.56 r
+  U1761/ZN (NR2D0BWP7T)                                   0.05      13.61 f
+  Tile_X0Y0_DSP_top/Inst_DSP_top_switch_matrix/inst_cus_mux41_buf_J2MID_EFa_BEG1/U1/Z (AO221D1BWP7T)
+                                                          0.33      13.94 f
+  U4711/ZN (CKND2BWP7T)                                   0.05      13.99 r
+  U4717/ZN (OAI211D2BWP7T)                                0.07      14.06 f
+  U4757/Z (XOR2D2BWP7T)                                   0.18      14.24 f
+  U4758/ZN (CKND2D2BWP7T)                                 0.06      14.29 r
+  U4445/ZN (IOA21D2BWP7T)                                 0.19      14.48 f
+  Tile_X0Y0_DSP_top/Inst_DSP_top_switch_matrix/inst_cus_mux161_buf_JS2BEG4/cus_mux41_buf_inst0/U2/ZN (MOAI22D1BWP7T)
+                                                          0.18      14.66 f
+  U1143/ZN (AOI221D2BWP7T)                                0.30      14.96 r
+  U4403/ZN (NR2D2BWP7T)                                   0.04      15.00 f
+  U4569/ZN (CKND2D2BWP7T)                                 0.06      15.06 r
+  U4570/ZN (IND2D2BWP7T)                                  0.04      15.10 f
+  U4571/ZN (IOA21D2BWP7T)                                 0.06      15.16 r
+  U4604/Z (XOR2D2BWP7T)                                   0.17      15.33 f
+  U4605/ZN (CKND2D2BWP7T)                                 0.07      15.40 r
+  U4382/ZN (ND2D4BWP7T)                                   0.07      15.47 f
+  Tile_X0Y1_DSP_bot/Inst_DSP_bot_switch_matrix/inst_cus_mux161_buf_JW2BEG0/cus_mux41_buf_inst3/U1/Z (AO221D1BWP7T)
+                                                          0.28      15.75 f
+  U4894/ZN (IND4D2BWP7T)                                  0.08      15.83 r
+  U4980/ZN (IND3D2BWP7T)                                  0.05      15.88 f
+  U1749/ZN (IOA21D2BWP7T)                                 0.14      16.03 f
+  U1747/ZN (INVD4BWP7T)                                   0.08      16.11 r
+  U641/ZN (NR2XD1BWP7T)                                   0.08      16.18 f
+  U1733/ZN (XNR2D2BWP7T)                                  0.18      16.36 f
+  U4777/ZN (IOA21D2BWP7T)                                 0.13      16.49 f
+  U4778/ZN (IOA21D2BWP7T)                                 0.06      16.56 r
+  U1737/Z (XOR2D2BWP7T)                                   0.15      16.71 r
+  U4779/Z (XOR2D2BWP7T)                                   0.20      16.91 f
+  U4780/ZN (CKND2D2BWP7T)                                 0.06      16.97 r
+  U4786/ZN (CKND2D2BWP7T)                                 0.05      17.03 f
+  U1722/ZN (IND2D2BWP7T)                                  0.07      17.09 r
+  U1721/Z (XOR2D2BWP7T)                                   0.19      17.28 f
+  U4441/ZN (NR2XD3BWP7T)                                  0.09      17.37 r
+  U4438/ZN (NR2D8BWP7T)                                   0.06      17.43 f
+  U4450/ZN (INVD6BWP7T)                                   0.09      17.52 r
+  Tile_X0Y0_DSP_top/Inst_DSP_top_switch_matrix/inst_cus_mux161_buf_JN2BEG1/cus_mux41_buf_inst0/U2/ZN (MOAI22D1BWP7T)
+                                                          0.07      17.59 f
+  U4855/ZN (NR2XD1BWP7T)                                  0.08      17.67 r
+  U4856/ZN (CKND2BWP7T)                                   0.04      17.72 f
+  U4857/ZN (AOI211XD1BWP7T)                               0.10      17.82 r
+  U4858/ZN (OAI31D2BWP7T)                                 0.09      17.90 f
+  U1724/ZN (OAI21D2BWP7T)                                 0.12      18.02 r
+  U4434/ZN (INVD1P5BWP7T)                                 0.04      18.07 f
+  U4859/ZN (IND2D2BWP7T)                                  0.06      18.13 r
+  U4860/ZN (CKND2BWP7T)                                   0.04      18.17 f
+  U1709/ZN (CKND2D2BWP7T)                                 0.05      18.22 r
+  U1708/ZN (IND2D2BWP7T)                                  0.04      18.26 f
+  U1707/ZN (OAI22D2BWP7T)                                 0.10      18.37 r
+  U4869/ZN (XNR2D2BWP7T)                                  0.21      18.58 f
+  U713/ZN (MAOI222D1BWP7T)                                0.23      18.82 r
+  U1760/ZN (XNR2D1BWP7T)                                  0.23      19.05 f
+  U4882/ZN (XNR2D2BWP7T)                                  0.20      19.25 f
+  U4440/ZN (NR2XD2BWP7T)                                  0.08      19.32 r
+  U4439/ZN (NR2D5BWP7T)                                   0.06      19.38 f
+  U293/Z (AO33D1BWP7T)                                    0.27      19.65 f
+  Tile_X0Y1_DSP_bot/Inst_DSP_bot_switch_matrix/inst_cus_mux161_buf_JN2BEG4/cus_mux41_buf_inst2/U1/Z (AO221D1BWP7T)
+                                                          0.37      20.02 f
+  U4825/ZN (AOI21D2BWP7T)                                 0.15      20.17 r
+  U4826/ZN (IND2D2BWP7T)                                  0.05      20.23 f
+  U4827/ZN (IOA21D2BWP7T)                                 0.34      20.57 r
+  U4840/ZN (IOA21D2BWP7T)                                 0.16      20.73 r
+  U4841/ZN (CKND2D2BWP7T)                                 0.05      20.79 f
+  U4842/ZN (AOI21D2BWP7T)                                 0.07      20.86 r
+  U4843/ZN (MUX4ND1BWP7T)                                 0.21      21.07 f
+  U4844/ZN (AOI22D2BWP7T)                                 0.17      21.24 r
+  U1757/ZN (ND2D2BWP7T)                                   0.05      21.29 f
+  U1758/ZN (ND2D2BWP7T)                                   0.06      21.35 r
+  U4845/Z (XOR2D2BWP7T)                                   0.17      21.53 r
+  U4846/ZN (IND3D2BWP7T)                                  0.06      21.58 f
+  U4847/ZN (CKND2D2BWP7T)                                 0.07      21.65 r
+  U4848/ZN (CKND2D2BWP7T)                                 0.05      21.71 f
+  U4853/Z (OA211D1BWP7T)                                  0.17      21.87 f
+  U1752/ZN (IOA21D2BWP7T)                                 0.06      21.93 r
+  U4870/Z (XOR2D2BWP7T)                                   0.17      22.10 f
+  U4871/ZN (CKND2D2BWP7T)                                 0.06      22.15 r
+  U4446/ZN (IOA21D2BWP7T)                                 0.25      22.41 f
+  U1756/ZN (CKND10BWP7T)                                  0.10      22.51 r
+  U5026/ZN (OAI22D2BWP7T)                                 0.06      22.56 f
+  Tile_X0Y1_DSP_bot/Inst_DSP_bot_switch_matrix/inst_cus_mux161_buf_JS2BEG6/cus_mux41_buf_inst2/U1/Z (AO221D1BWP7T)
+                                                          0.34      22.90 f
+  U4612/ZN (IND4D2BWP7T)                                  0.07      22.97 r
+  U4613/ZN (NR2XD1BWP7T)                                  0.05      23.02 f
+  U1700/ZN (CKND2BWP7T)                                   0.05      23.07 r
+  U1699/ZN (IND2D2BWP7T)                                  0.04      23.11 f
+  U4614/ZN (AOI31D2BWP7T)                                 0.18      23.29 r
+  U1762/Z (CKXOR2D1BWP7T)                                 0.19      23.49 f
+  U4710/ZN (CKND2D2BWP7T)                                 0.06      23.55 r
+  U4444/ZN (IOA21D2BWP7T)                                 0.17      23.72 f
+  Tile_X0Y1_DSP_bot/Inst_DSP_bot_switch_matrix/inst_cus_mux161_buf_JN2BEG0/cus_mux41_buf_inst2/U1/Z (AO221D1BWP7T)
+                                                          0.30      24.02 f
+  U4900/ZN (CKND2D2BWP7T)                                 0.08      24.10 r
+  U4901/ZN (OAI22D2BWP7T)                                 0.07      24.17 f
+  U4902/ZN (AOI31D2BWP7T)                                 0.16      24.33 r
+  U4903/ZN (CKND2D2BWP7T)                                 0.10      24.43 f
+  U4908/ZN (CKND2D2BWP7T)                                 0.07      24.50 r
+  U4909/ZN (IND2D2BWP7T)                                  0.04      24.54 f
+  U4910/ZN (OAI21D2BWP7T)                                 0.07      24.62 r
+  U4911/Z (OA21D1BWP7T)                                   0.18      24.80 r
+  U1754/ZN (ND2D3BWP7T)                                   0.08      24.88 f
+  U4921/Z (XOR2D2BWP7T)                                   0.18      25.06 f
+  U4986/ZN (OAI21D2BWP7T)                                 0.10      25.16 r
+  U1729/ZN (AOI21D2BWP7T)                                 0.06      25.22 f
+  U1728/ZN (AOI21D2BWP7T)                                 0.11      25.33 r
+  U4997/ZN (XNR2D2BWP7T)                                  0.21      25.54 f
+  U4389/Z (OA21D2BWP7T)                                   0.28      25.81 f
+  U4390/ZN (CKND2BWP7T)                                   0.09      25.91 r
+  Tile_X0Y0_DSP_top/Inst_DSP_top_switch_matrix/inst_cus_mux161_buf_JE2BEG0/cus_mux41_buf_inst1/U2/ZN (MOAI22D1BWP7T)
+                                                          0.07      25.98 f
+  U5045/Z (OA21D1BWP7T)                                   0.13      26.11 f
+  Tile_X0Y0_DSP_top/Inst_DSP_top_switch_matrix/inst_cus_mux41_buf_S1BEG1/U1/Z (AO221D1BWP7T)
+                                                          0.34      26.44 f
+  U4883/ZN (CKND2D2BWP7T)                                 0.07      26.51 r
+  U4933/ZN (AOI21D2BWP7T)                                 0.05      26.56 f
+  U4934/ZN (CKND2BWP7T)                                   0.04      26.60 r
+  U4935/ZN (OAI21D2BWP7T)                                 0.05      26.65 f
+  U4938/ZN (XNR2D2BWP7T)                                  0.19      26.84 r
+  U4939/ZN (IND2D2BWP7T)                                  0.04      26.89 f
+  U4940/ZN (IND2D2BWP7T)                                  0.06      26.95 r
+  U5010/ZN (IND2D2BWP7T)                                  0.05      27.00 f
+  U5013/ZN (OAI211D2BWP7T)                                0.12      27.12 r
+  U5014/Z (XOR2D2BWP7T)                                   0.19      27.31 f
+  U4433/ZN (ND2D2BWP7T)                                   0.06      27.37 r
+  U4449/ZN (IOA21D2BWP7T)                                 0.26      27.62 f
+  U1755/Z (MUX2D2BWP7T)                                   0.28      27.91 f
+  U5268/ZN (CKND2D2BWP7T)                                 0.04      27.95 r
+  U1763/ZN (OAI21D0BWP7T)                                 0.05      28.00 f
+  Tile_X0Y0_N4BEG[13] (out)                               0.00      28.00 f
+  data arrival time                                                 28.00
+
+  clock UserCLK (rise edge)                              30.00      30.00
+  clock network delay (ideal)                             0.00      30.00
+  output external delay                                  -0.50      29.50
+  data required time                                                29.50
+  --------------------------------------------------------------------------
+  data required time                                                29.50
+  data arrival time                                                -28.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.50
+
+
+1
